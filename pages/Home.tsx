@@ -68,7 +68,7 @@ const Home: React.FC = () => {
                       <p>name: <span className="text-accent">"Abhinav Shukla"</span>,</p>
                       <p>role: <span className="text-accent">"AI/ML Engineer"</span>,</p>
                       <p>skills: [<span className="text-accent">"Python"</span>, <span className="text-accent">"Java"</span>, <span className="text-accent">"ML / NLP"</span>],</p>
-                      <p>status: <span className="text-accent">"Open for collaborations"</span></p>
+                      <p>status: <span className="text-accent">"Open for work"</span></p>
                     </div>
                     <p>{'};'}</p>
                     <br/>
