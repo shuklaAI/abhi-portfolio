@@ -1,5 +1,5 @@
 import { Project, Experience, Achievement, SkillData } from './types';
-import { Layout, Code, Smartphone, Cpu, PenTool } from 'lucide-react';
+import { Layout, Code, Smartphone, Cpu } from 'lucide-react';
 
 export const NAV_LINKS = [
   { name: 'Home', path: '/' },
@@ -13,7 +13,8 @@ export const PROJECTS: Project[] = [
   {
     id: '103',
     title: 'Hand-Tracking Particle Effect',
-    description: 'A browser-based interactive particle simulation controlled by real-time hand-tracking using MediaPipe. Features gesture detection, smooth physics, and dynamic particle responses.',
+    description:
+      'A browser-based interactive particle simulation controlled by real-time hand-tracking using MediaPipe. Features gesture detection, smooth physics, and dynamic particle responses.',
     category: 'Web',
     technologies: ['JavaScript', 'MediaPipe', 'HTML5 Canvas'],
     imageUrl: 'https://raw.githubusercontent.com/shuklaAI/Hand-Tracking-Particle-Effect/main/preview.png',
@@ -24,7 +25,8 @@ export const PROJECTS: Project[] = [
   {
     id: '102',
     title: 'VAT PDF Generator',
-    description: 'A Streamlit-based tool that generates VAT-ready PDF invoices from user inputs. Supports dynamic form fields, calculation logic, and PDF export.',
+    description:
+      'A Streamlit-based tool that generates VAT-ready PDF invoices from user inputs. Supports dynamic form fields, calculation logic, and PDF export.',
     category: 'AI/ML',
     technologies: ['Python', 'Streamlit', 'ReportLab', 'Pandas'],
     imageUrl: 'https://raw.githubusercontent.com/shuklaAI/vat-pdf-demo/main/preview.png',
@@ -34,59 +36,79 @@ export const PROJECTS: Project[] = [
   },
   {
     id: '1',
-    title: 'AI-Powered Quiz System',
-    description: 'Adaptive quiz app with instant scoring, smart randomization, and AI-based question generation.',
+    title: 'AI-Resume-Screener-System',
+    description:
+      'Analyzes resumes against job descriptions. It evaluates keyword matches, semantic relevance, and experience, provides personalized suggestions for improvement, and dynamically shortlists candidates.',
     category: 'AI/ML',
-    technologies: ['Python', 'Flask', 'NLP', 'SQLite'],
-    imageUrl: 'https://picsum.photos/800/600?random=10',
-    repoUrl: 'https://github.com/shuklaAI/AI-POWERED-QUIZ-SYSTEM',
+    technologies: ['Python', 'Cython', 'C', 'C++', 'XSLT', 'Fortan'],
+    imageUrl: 'https://github.com/user-attachments/assets/63eac6d1-4cc8-418a-a317-48c2d818a367',
+    repoUrl: 'https://github.com/shuklaAI/AI-Resume-Screener-System',
     featured: true,
   },
   {
     id: '5',
-    title: 'ShuklaAI Tools Collection',
-    description: 'Personal tools & automation scripts for experiments and prototyping.',
+    title: 'OCR-DATA-EXTRACTOR',
+    description:
+      'A simple and efficient tool that extracts text from images and PDFs using Python, Flask, and Tesseract OCR',
     category: 'Fullstack',
-    technologies: ['Python', 'JavaScript', 'APIs'],
+    technologies: ['Python'],
     imageUrl: 'https://picsum.photos/800/600?random=5',
-    repoUrl: 'https://github.com/shuklaAI/shuklaAi',
+    repoUrl: 'https://github.com/shuklaAI/OCR-DATA-EXTRACTOR',
     featured: false,
   },
 ];
 
+// ✅ Updated SKILLS_DATA — based on your full resume
 export const SKILLS_DATA: SkillData[] = [
-  { subject: 'Python & ML', A: 90, fullMark: 100 },
-  { subject: 'Java & DSA', A: 80, fullMark: 100 },
-  { subject: 'Web (JS/Flask)', A: 75, fullMark: 100 },
-  { subject: 'Cybersecurity', A: 70, fullMark: 100 },
-  { subject: 'Automation', A: 85, fullMark: 100 },
-  { subject: 'Data Science', A: 80, fullMark: 100 },
+  { subject: 'Python', A: 95, fullMark: 100 },
+  { subject: 'Machine Learning', A: 90, fullMark: 100 },
+  { subject: 'Deep Learning', A: 85, fullMark: 100 },
+  { subject: 'Natural Language Processing (NLP)', A: 80, fullMark: 100 },
+  { subject: 'Java', A: 75, fullMark: 100 },
+  { subject: 'JavaScript / React', A: 80, fullMark: 100 },
+  { subject: 'FastAPI / Flask', A: 85, fullMark: 100 },
+  { subject: 'Automation (n8n / Make)', A: 90, fullMark: 100 },
+  { subject: 'Data Visualization', A: 80, fullMark: 100 },
+  { subject: 'Git / GitHub', A: 90, fullMark: 100 },
 ];
 
+// ✅ Updated EXPERIENCES — matches your refined resume data
 export const EXPERIENCES: Experience[] = [
   {
     id: '1',
-    role: 'AI & Data Science Intern',
-    company: 'LastBook',
-    period: '2025',
-    description: 'Developed ML pipelines, recommendation models, backend APIs and NLP sorting tools.',
+    role: 'AI/ML Engineer',
+    company: 'AppSynergies Pvt. Ltd.',
+    period: 'Sept 2025 – Dec 2025',
+    description:
+      'Designed and deployed automation workflows using n8n, Make, and AI integration tools. Built conversational AI systems with Retell AI and ManyChat to enhance client interactions and streamline processes.',
   },
   {
     id: '2',
-    role: 'AI Research Intern',
-    company: 'Khabre Vidyarthi',
-    period: '2025',
-    description: 'Built NLP content systems, engagement trackers and automation tools.',
+    role: 'AI & Data Science Intern',
+    company: 'LastBook (EdTech)',
+    period: 'May 2025 – Jul 2025',
+    description:
+      'Developed and optimized ML pipelines for student analytics and content personalization. Improved data accuracy using Scikit-learn and Pandas. Supported integration of AI models into educational dashboards for real-time insights.',
   },
   {
     id: '3',
-    role: 'AI/ML Intern',
+    role: 'AI Research Intern – Media & Content',
+    company: 'Khabre Vidyarthi',
+    period: 'Jan 2025 – Apr 2025',
+    description:
+      'Built Python-based automation pipelines to analyze large-scale media data. Applied NLP techniques for content tagging and keyword extraction. Contributed to optimizing AI tools for faster data processing.',
+  },
+  {
+    id: '4',
+    role: 'Web Development Intern',
     company: 'CrowdFireMedia',
-    period: '2024',
-    description: 'Developed engagement prediction models and API automation scripts.',
+    period: 'Oct 2024 – Dec 2024',
+    description:
+      'Developed responsive and SEO-friendly web apps using HTML, CSS, JavaScript, and React. Automated content scheduling, tracked engagement, and implemented analytics for campaign performance.',
   },
 ];
 
+// ✅ Certifications / Achievements remain the same
 export const ACHIEVEMENTS: Achievement[] = [
   {
     id: '1',
@@ -106,14 +128,22 @@ export const ACHIEVEMENTS: Achievement[] = [
   },
   {
     id: '3',
-    title: 'Python for Data Science',
-    date: '2024',
-    organization: 'IBM',
-    description: 'Professional certification in data analysis and visualization with Python.',
-    iconType: 'award',
+    title: 'Agentic AI: From Learner to Builder.',
+    date: '2025',
+    organization: 'IBM SkillsBuild',
+    description: 'Professional certification from IBM.',
+    iconType: 'certificate',
   },
   {
     id: '4',
+    title: 'Generative AI Mastermind',
+    date: '2025',
+    organization: 'Outskill',
+    description: 'Completed under mentorship of Vaibhav Sisinty, covering advanced generative AI applications.',
+    iconType: 'certificate',
+  },
+  {
+    id: '5',
     title: 'Data Science Foundations',
     date: '2024',
     organization: 'Great Learning',
@@ -123,8 +153,8 @@ export const ACHIEVEMENTS: Achievement[] = [
 ];
 
 export const CATEGORY_ICONS: Record<string, any> = {
-  'Web': Layout,
-  'Fullstack': Code,
-  'Mobile': Smartphone,
+  Web: Layout,
+  Fullstack: Code,
+  Mobile: Smartphone,
   'AI/ML': Cpu,
 };
