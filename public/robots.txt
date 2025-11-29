@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://abhiavshukla.vercel.app/sitemap.xml
