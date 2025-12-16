@@ -16,7 +16,7 @@ export const PROJECTS: Project[] = [
     description:
       'Nebula-Music is a full-stack music streaming application built as an educational project to demonstrate modern web development skills..',
     category: 'Web',
-    technologies: ['JavaScript', 'MediaPipe', 'HTML5 Canvas' ,'Python','CSS','Batchfile','Shell','PowerShell','HTML'],
+    technologies: ['JavaScript','Python','CSS','Batchfile','Shell','PowerShell','HTML'],
     imageUrl: '',
     liveUrl: '',
     repoUrl: 'https://github.com/shuklaAI/Nebula-Music',
